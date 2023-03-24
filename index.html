@@ -35,7 +35,7 @@
         color:#ffffff;
         top: 8px;
         right: 0;
-        padding: 0 5px 0 5px;
+        padding: 0 10px 0 10px;
         font-size: 15px;
         }
 
@@ -45,62 +45,66 @@
         object-fit: cover;
         opacity: 100%;
         }
-
-        .parent{
+        .parent {
             position: absolute;
-            padding: 15% 0px 15% 0;
             bottom: 0;
+            text-align: center;
             width: 100%;
             background-color: #ffffff;
-            text-align: center;
-            opacity:0.6;
+            height: 30%;
+            opacity: 0.6;
         }
-        .child {
-            background-color: white;
-            opacity: 1;
+        .child{
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            align-items: center;
+            height: 21%;
+            width: 100%;
         }
         .child button{
             background-color: #ffffff;
-            padding: 5px;
+            color: #000000;
+            padding: 10px 20px 10px 20px;
             opacity: 1;
         }
+        .child button:hover{
+            cursor: pointer;
+            background-color: #000000;
+            color: #ffffff;
+            transition: 1s;
+            border:1px solid #ffffff;
+        }
+
     </style>
 </head>
 <body>
     <div class="hero">
-        <div class="close">
-            <img src="./img/close.png" alt="" style="width: 60px;">
-        </div>
-
-        <div class="fixed">
-
-        </div>
-
-        <div class="position-container">
-            <div class="relative">
-                <img src="./img/shirt.jpg" alt="">
-            <div class="absolute">
-                <div class="sale">
-                <p>20% OFF</p>
-                </div>
-                
-                <div class="parent">
-                    <div class="child">
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-        </div>
+            <div class="close">
+                <img src="./img/close.png" alt="" style="width: 60px;">
+            </div>
+        
+            <div class="fixed">
             </div>
 
-            
-            
-            
-        </div>
+            <div class="position-container">
+                <div class="relative">
+                    <img src="./img/shirt.jpg" alt="">
+                        <div class="absolute">
+                                <div class="sale">
+                                <p>20% OFF</p>
+                                </div>
+                        </div>
+                </div>
 
-        
-          
+                <div class="parent">
+                </div>
+                <div class="child">
+                    <button type="submit">Add to Cart</button>
+                </div>
+            </div>
+        </div>
     </div>
-      </div>
 
 </body>
 </html>
